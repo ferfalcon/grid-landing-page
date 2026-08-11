@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter/inter-variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@layer reset, base, utilities;
+
+@layer reset {
+  html {
+    box-sizing: border-box;
+  }
+
+  body,
+  header,
+  main,
+  section,
+  footer,
+  aside,
+  div,
+  ul,
+  li,
+  a,
+  button {
+    box-sizing: inherit;
+  }
+
+  body,
+  h1,
+  h2,
+  p,
+  ul {
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  button {
+    font: inherit;
+  }
+
+  img {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --color-blue-700: #2854fe;
+    --color-blue-600: #325cff;
+    --color-blue-400: #4784ff;
+    --color-blue-200: #e4ebff;
+    --color-neutral-0: #ffffff;
+    --color-overlay: rgb(0 0 0 / 25%);
+    --font-sans: 'Inter', Arial, sans-serif;
+    --header-height: 4.5rem;
+  }
+
+  html {
+    min-inline-size: 20rem;
+    background: var(--color-blue-700);
+  }
+
+  body {
+    min-inline-size: 20rem;
+    min-block-size: 100dvh;
+    background: var(--color-blue-700);
+    color: var(--color-neutral-0);
+    font-family: var(--font-sans);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  :where(a:any-link, button):focus-visible {
+    outline: 0.1875rem solid var(--color-neutral-0);
+    outline-offset: 0.1875rem;
+  }
+
+  ::selection {
+    background: var(--color-neutral-0);
+    color: var(--color-blue-700);
+  }
+}
+
+@layer utilities {
+  .visually-hidden:where(:not(:focus-within, :active)) {
+    position: absolute !important;
+    inline-size: 1px !important;
+    block-size: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip-path: inset(50%) !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .skip-link {
+    position: fixed;
+    inset-block-start: 0.75rem;
+    inset-inline-start: 0.75rem;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    background: var(--color-neutral-0);
+    color: var(--color-blue-700);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.42;
+  }
+}
+
+@media (forced-colors: active) {
+  :root {
+    --color-blue-700: Canvas;
+    --color-blue-600: Highlight;
+    --color-blue-400: CanvasText;
+    --color-blue-200: CanvasText;
+    --color-neutral-0: CanvasText;
+    --color-overlay: rgb(0 0 0 / 50%);
+  }
+
+  :where(a:any-link, button):focus-visible {
+    outline-color: Highlight;
+  }
+}
