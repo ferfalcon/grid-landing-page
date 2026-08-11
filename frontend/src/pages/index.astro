@@ -1,11 +1,197 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import type { ImageMetadata } from 'astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import StatCard from '../components/StatCard.astro';
+import arrowIcon from '../assets/icons/icon-arrow-right.svg';
+import plusIcon from '../assets/icons/icon-plus.svg';
+import sparkleIcon from '../assets/icons/icon-sparkle.svg';
+import trendingIcon from '../assets/icons/icon-trending-up.svg';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+interface StatItem {
+  value: string;
+  label: string;
+  description: string;
+  icon: ImageMetadata;
+}
+
+const stats: StatItem[] = [
+  {
+    value: '2.4M',
+    label: 'Students reached',
+    description: 'Across 31 countries since 2011.',
+    icon: sparkleIcon,
+  },
+  {
+    value: '1,284',
+    label: 'Schools partnered',
+    description: 'In 14 countries, from Kenya to Guatemala.',
+    icon: plusIcon,
+  },
+  {
+    value: '38K',
+    label: 'Teachers trained',
+    description: 'Equipped with modern tools and methodology.',
+    icon: arrowIcon,
+  },
+  {
+    value: '3.1×',
+    label: 'Graduation lift',
+    description: 'Partner schools outperform national averages 3x.',
+    icon: trendingIcon,
+  },
+];
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+  title="A classroom for every child | Bridge Collective"
+  description="Bridge Collective funds schools, trains teachers, and measures what works so every child reached today becomes a graduate tomorrow."
+>
+  <a class="skip-link visually-hidden" href="#main-content">Skip to main content</a>
+  <div class="page-shell">
+    <SiteHeader />
+
+    <main class="page-content" id="main-content" tabindex="-1" data-menu-background>
+      <section class="hero">
+        <div class="hero__content">
+          <h1>A classroom for every child.</h1>
+          <p>
+            We fund the schools, train the teachers, and measure what works — so every child we reach
+            today becomes a graduate tomorrow.
+          </p>
+        </div>
+      </section>
+
+      <ul class="stats-grid" role="list" aria-label="Bridge Collective impact">
+        {stats.map((stat) => <StatCard {...stat} />)}
+      </ul>
+    </main>
+
+    <footer class="site-footer" data-menu-background>
+      <p>© 2026 Bridge Collective</p>
+      <p>Registered charity 12345678</p>
+    </footer>
+  </div>
 </Layout>
+
+<style>
+  .page-shell {
+    display: grid;
+    grid-template-rows: var(--header-height) auto auto;
+    min-block-size: 100dvh;
+    background: var(--color-blue-700);
+  }
+
+  .page-content {
+    min-inline-size: 0;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    min-block-size: 21.375rem;
+    padding: 3.5rem 2rem;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    inline-size: 100%;
+  }
+
+  h1 {
+    color: var(--color-neutral-0);
+    font-size: 2.75rem;
+    font-weight: 500;
+    line-height: 1.06;
+    letter-spacing: -0.125rem;
+    text-wrap: balance;
+  }
+
+  .hero p {
+    color: var(--color-blue-200);
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.65;
+    text-wrap: pretty;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    list-style: none;
+  }
+
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-block-size: 5.5rem;
+    padding: 1.5rem;
+    border-block-start: 1px solid var(--color-blue-400);
+    color: var(--color-neutral-0);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.42;
+    opacity: 0.8;
+  }
+
+  .site-footer p {
+    white-space: nowrap;
+  }
+
+  @media (min-width: 48rem) {
+    .page-shell {
+      grid-template-rows: var(--header-height) auto 4.5rem;
+    }
+
+    .hero {
+      min-block-size: 33.5rem;
+      padding: 3rem;
+    }
+
+    .hero__content {
+      gap: 2.5rem;
+      max-inline-size: 24.8125rem;
+    }
+
+    h1 {
+      font-size: 3.75rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-auto-rows: minmax(20.5rem, auto);
+    }
+
+    .site-footer {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      min-block-size: 4.5rem;
+      padding: 1.5rem 3rem;
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .page-shell {
+      grid-template-rows: var(--header-height) minmax(41rem, 1fr) 4.5rem;
+    }
+
+    .page-content {
+      display: grid;
+      grid-template-columns: minmax(0, 45%) minmax(0, 55%);
+    }
+
+    .hero {
+      min-block-size: 41rem;
+      padding: 3rem;
+    }
+
+    .stats-grid {
+      grid-template-rows: repeat(2, minmax(20.5rem, 1fr));
+    }
+  }
+</style>

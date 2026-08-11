@@ -1,0 +1,434 @@
+{
+  "initial": {
+    "viewport": [
+      1440,
+      800
+    ],
+    "expanded": "false",
+    "layerHidden": true,
+    "mainInert": false,
+    "footerInert": false,
+    "bodyOverflow": "visible",
+    "activeElement": "BODY",
+    "toggleName": "Open menu",
+    "toggleRect": {
+      "width": 44,
+      "height": 44
+    },
+    "panel": {
+      "width": 0,
+      "height": 0
+    },
+    "nav": [
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "About"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Our Work"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Partners"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Annual Report"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Donate"
+      }
+    ]
+  },
+  "pointerOpen": {
+    "viewport": [
+      1440,
+      800
+    ],
+    "expanded": "true",
+    "layerHidden": false,
+    "mainInert": true,
+    "footerInert": true,
+    "bodyOverflow": "hidden",
+    "activeElement": "menu-open",
+    "toggleName": "Close menu",
+    "toggleRect": {
+      "width": 44,
+      "height": 44
+    },
+    "panel": {
+      "width": 396,
+      "height": 728
+    },
+    "nav": [
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "About"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Our Work"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Partners"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Annual Report"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Donate"
+      }
+    ]
+  },
+  "escapeClose": {
+    "viewport": [
+      1440,
+      800
+    ],
+    "expanded": "false",
+    "layerHidden": true,
+    "mainInert": false,
+    "footerInert": false,
+    "bodyOverflow": "visible",
+    "activeElement": "menu-toggle",
+    "toggleName": "Open menu",
+    "toggleRect": {
+      "width": 44,
+      "height": 44
+    },
+    "panel": {
+      "width": 0,
+      "height": 0
+    },
+    "nav": [
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "About"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Our Work"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Partners"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Annual Report"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Donate"
+      }
+    ]
+  },
+  "keyboardOpen": {
+    "viewport": [
+      1440,
+      800
+    ],
+    "expanded": "false",
+    "layerHidden": true,
+    "mainInert": false,
+    "footerInert": false,
+    "bodyOverflow": "visible",
+    "activeElement": "menu-toggle",
+    "toggleName": "Open menu",
+    "toggleRect": {
+      "width": 44,
+      "height": 44
+    },
+    "panel": {
+      "width": 0,
+      "height": 0
+    },
+    "nav": [
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "About"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Our Work"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Partners"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Annual Report"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Donate"
+      }
+    ]
+  },
+  "keyboardEscapeClose": {
+    "viewport": [
+      1440,
+      800
+    ],
+    "expanded": "false",
+    "layerHidden": true,
+    "mainInert": false,
+    "footerInert": false,
+    "bodyOverflow": "visible",
+    "activeElement": "menu-toggle",
+    "toggleName": "Open menu",
+    "toggleRect": {
+      "width": 44,
+      "height": 44
+    },
+    "panel": {
+      "width": 0,
+      "height": 0
+    },
+    "nav": [
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "About"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Our Work"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Partners"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Annual Report"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Donate"
+      }
+    ]
+  },
+  "scrimClose": {
+    "viewport": [
+      1440,
+      800
+    ],
+    "expanded": "false",
+    "layerHidden": true,
+    "mainInert": false,
+    "footerInert": false,
+    "bodyOverflow": "visible",
+    "activeElement": "menu-toggle",
+    "toggleName": "Open menu",
+    "toggleRect": {
+      "width": 44,
+      "height": 44
+    },
+    "panel": {
+      "width": 0,
+      "height": 0
+    },
+    "nav": [
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "About"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Our Work"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Partners"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Annual Report"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Donate"
+      }
+    ]
+  },
+  "resizeWhileOpen": {
+    "viewport": [
+      375,
+      700
+    ],
+    "expanded": "true",
+    "layerHidden": false,
+    "mainInert": true,
+    "footerInert": true,
+    "bodyOverflow": "hidden",
+    "activeElement": "menu-toggle",
+    "toggleName": "Close menu",
+    "toggleRect": {
+      "width": 44,
+      "height": 44
+    },
+    "panel": {
+      "width": 375,
+      "height": 342
+    },
+    "nav": [
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "About"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Our Work"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Partners"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Annual Report"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Donate"
+      }
+    ]
+  },
+  "resizeEscapeClose": {
+    "viewport": [
+      375,
+      700
+    ],
+    "expanded": "false",
+    "layerHidden": true,
+    "mainInert": false,
+    "footerInert": false,
+    "bodyOverflow": "visible",
+    "activeElement": "menu-toggle",
+    "toggleName": "Open menu",
+    "toggleRect": {
+      "width": 44,
+      "height": 44
+    },
+    "panel": {
+      "width": 0,
+      "height": 0
+    },
+    "nav": [
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "About"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Our Work"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Partners"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Annual Report"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Donate"
+      }
+    ]
+  },
+  "firstTab": {
+    "viewport": [
+      1440,
+      800
+    ],
+    "expanded": "false",
+    "layerHidden": true,
+    "mainInert": false,
+    "footerInert": false,
+    "bodyOverflow": "visible",
+    "activeElement": "skip-link visually-hidden",
+    "toggleName": "Open menu",
+    "toggleRect": {
+      "width": 44,
+      "height": 44
+    },
+    "panel": {
+      "width": 0,
+      "height": 0
+    },
+    "nav": [
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "About"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Our Work"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Partners"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Annual Report"
+      },
+      {
+        "tag": "LI",
+        "tabIndex": -1,
+        "text": "Donate"
+      }
+    ]
+  }
+}

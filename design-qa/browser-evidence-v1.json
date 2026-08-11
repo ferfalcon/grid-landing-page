@@ -1,0 +1,1425 @@
+{
+  "captures": {
+    "implementation-desktop-closed-v1": {
+      "path": "/home/fer/code/Grid landing page/grid-landing-page/design-qa/implementation-desktop-closed-v1.png",
+      "viewport": {
+        "width": 1440,
+        "height": 800,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 1440,
+        "scrollHeight": 800
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 648,
+        "height": 656
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 274.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 728,
+        "width": 1440,
+        "height": 72
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 648,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 648,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf",
+        "http://127.0.0.1:4321/favicon-32x32.png"
+      ]
+    },
+    "implementation-desktop-open-v1": {
+      "path": "/home/fer/code/Grid landing page/grid-landing-page/design-qa/implementation-desktop-open-v1.png",
+      "viewport": {
+        "width": 1440,
+        "height": 800,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 1440,
+        "scrollHeight": 800
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 648,
+        "height": 656
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 274.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 728,
+        "width": 1440,
+        "height": 72
+      },
+      "panel": {
+        "x": 1044,
+        "y": 72,
+        "width": 396,
+        "height": 728
+      },
+      "cards": [
+        {
+          "x": 648,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 648,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "true",
+        "layerHidden": false,
+        "mainInert": true,
+        "footerInert": true,
+        "bodyOverflow": "hidden"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf",
+        "http://127.0.0.1:4321/favicon-32x32.png",
+        "http://127.0.0.1:4321/_astro/icon-close.CS0vbVsS.svg"
+      ]
+    },
+    "implementation-desktop-hover-v1": {
+      "path": "/home/fer/code/Grid landing page/grid-landing-page/design-qa/implementation-desktop-hover-v1.png",
+      "viewport": {
+        "width": 1440,
+        "height": 800,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 1440,
+        "scrollHeight": 800
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 648,
+        "height": 656
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 274.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 728,
+        "width": 1440,
+        "height": 72
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 648,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 648,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf",
+        "http://127.0.0.1:4321/favicon-32x32.png",
+        "http://127.0.0.1:4321/_astro/icon-close.CS0vbVsS.svg"
+      ]
+    },
+    "implementation-tablet-closed-v1": {
+      "path": "/home/fer/code/Grid landing page/grid-landing-page/design-qa/implementation-tablet-closed-v1.png",
+      "viewport": {
+        "width": 768,
+        "height": 1336,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 768,
+        "scrollHeight": 1336
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 768,
+        "height": 536
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 214.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 1264,
+        "width": 768,
+        "height": 72
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 0,
+          "y": 608,
+          "width": 384,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 384,
+          "y": 608,
+          "width": 384,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 936,
+          "width": 384,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 384,
+          "y": 936,
+          "width": 384,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf"
+      ]
+    },
+    "implementation-tablet-open-v1": {
+      "path": "/home/fer/code/Grid landing page/grid-landing-page/design-qa/implementation-tablet-open-v1.png",
+      "viewport": {
+        "width": 768,
+        "height": 1336,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 768,
+        "scrollHeight": 1336
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 768,
+        "height": 536
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 214.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 1264,
+        "width": 768,
+        "height": 72
+      },
+      "panel": {
+        "x": 372,
+        "y": 72,
+        "width": 396,
+        "height": 1264
+      },
+      "cards": [
+        {
+          "x": 0,
+          "y": 608,
+          "width": 384,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 384,
+          "y": 608,
+          "width": 384,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 936,
+          "width": 384,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 384,
+          "y": 936,
+          "width": 384,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "true",
+        "layerHidden": false,
+        "mainInert": true,
+        "footerInert": true,
+        "bodyOverflow": "hidden"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf",
+        "http://127.0.0.1:4321/_astro/icon-close.CS0vbVsS.svg"
+      ]
+    },
+    "implementation-mobile-closed-v1": {
+      "path": "/home/fer/code/Grid landing page/grid-landing-page/design-qa/implementation-mobile-closed-v1.png",
+      "viewport": {
+        "width": 375,
+        "height": 1816,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 375,
+        "scrollHeight": 1816
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 375,
+        "height": 342
+      },
+      "heroContent": {
+        "x": 32,
+        "y": 128.28,
+        "width": 311,
+        "height": 229.44
+      },
+      "footer": {
+        "x": 0,
+        "y": 1726.63,
+        "width": 375,
+        "height": 89.38
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 0,
+          "y": 414,
+          "width": 375,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 742,
+          "width": 375,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 1070,
+          "width": 375,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 1398,
+          "width": 375,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "44px",
+        "h1LineHeight": "46.64px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf"
+      ]
+    },
+    "implementation-mobile-open-v1": {
+      "path": "/home/fer/code/Grid landing page/grid-landing-page/design-qa/implementation-mobile-open-v1.png",
+      "viewport": {
+        "width": 375,
+        "height": 1816,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 375,
+        "scrollHeight": 1816
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 375,
+        "height": 342
+      },
+      "heroContent": {
+        "x": 32,
+        "y": 128.28,
+        "width": 311,
+        "height": 229.44
+      },
+      "footer": {
+        "x": 0,
+        "y": 1726.63,
+        "width": 375,
+        "height": 89.38
+      },
+      "panel": {
+        "x": 0,
+        "y": 72,
+        "width": 375,
+        "height": 342
+      },
+      "cards": [
+        {
+          "x": 0,
+          "y": 414,
+          "width": 375,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 742,
+          "width": 375,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 1070,
+          "width": 375,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 1398,
+          "width": 375,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "true",
+        "layerHidden": false,
+        "mainInert": true,
+        "footerInert": true,
+        "bodyOverflow": "hidden"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "44px",
+        "h1LineHeight": "46.64px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf",
+        "http://127.0.0.1:4321/_astro/icon-close.CS0vbVsS.svg"
+      ]
+    },
+    "implementation-mobile-320-v1": {
+      "path": "/home/fer/code/Grid landing page/grid-landing-page/design-qa/implementation-mobile-320-v1.png",
+      "viewport": {
+        "width": 320,
+        "height": 1000,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 320,
+        "scrollHeight": 1842
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 320,
+        "height": 369.48
+      },
+      "heroContent": {
+        "x": 32,
+        "y": 128,
+        "width": 256,
+        "height": 257.48
+      },
+      "footer": {
+        "x": 0,
+        "y": 1753.48,
+        "width": 320,
+        "height": 88.75
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 0,
+          "y": 441.48,
+          "width": 320,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 769.48,
+          "width": 320,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 1097.48,
+          "width": 320,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 1425.48,
+          "width": 320,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "44px",
+        "h1LineHeight": "46.64px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf"
+      ]
+    },
+    "metrics-767": {
+      "viewport": {
+        "width": 767,
+        "height": 1000,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 752,
+        "scrollHeight": 1815
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 752,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 752,
+        "height": 342
+      },
+      "heroContent": {
+        "x": 32,
+        "y": 179.64,
+        "width": 688,
+        "height": 126.72
+      },
+      "footer": {
+        "x": 0,
+        "y": 1726,
+        "width": 752,
+        "height": 88.75
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 0,
+          "y": 414,
+          "width": 752,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 742,
+          "width": 752,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 1070,
+          "width": 752,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 1398,
+          "width": 752,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "44px",
+        "h1LineHeight": "46.64px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf"
+      ]
+    },
+    "metrics-768": {
+      "viewport": {
+        "width": 768,
+        "height": 1000,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 753,
+        "scrollHeight": 1336
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 753,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 753,
+        "height": 536
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 214.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 1264,
+        "width": 753,
+        "height": 72
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 0,
+          "y": 608,
+          "width": 376.5,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 376.5,
+          "y": 608,
+          "width": 376.5,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 936,
+          "width": 376.5,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 376.5,
+          "y": 936,
+          "width": 376.5,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf"
+      ]
+    },
+    "metrics-1024": {
+      "viewport": {
+        "width": 1024,
+        "height": 1000,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 1009,
+        "scrollHeight": 1336
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1009,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 1009,
+        "height": 536
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 214.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 1264,
+        "width": 1009,
+        "height": 72
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 0,
+          "y": 608,
+          "width": 504.5,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 504.5,
+          "y": 608,
+          "width": 504.5,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 936,
+          "width": 504.5,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 504.5,
+          "y": 936,
+          "width": 504.5,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf"
+      ]
+    },
+    "metrics-1279": {
+      "viewport": {
+        "width": 1279,
+        "height": 1000,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 1264,
+        "scrollHeight": 1336
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1264,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 1264,
+        "height": 536
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 214.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 1264,
+        "width": 1264,
+        "height": 72
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 0,
+          "y": 608,
+          "width": 632,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 632,
+          "y": 608,
+          "width": 632,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 0,
+          "y": 936,
+          "width": 632,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 632,
+          "y": 936,
+          "width": 632,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf"
+      ]
+    },
+    "metrics-1280": {
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 1280,
+        "scrollHeight": 800
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 576,
+        "height": 656
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 274.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 728,
+        "width": 1280,
+        "height": 72
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 576,
+          "y": 72,
+          "width": 352,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 928,
+          "y": 72,
+          "width": 352,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 576,
+          "y": 400,
+          "width": 352,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 928,
+          "y": 400,
+          "width": 352,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf"
+      ]
+    }
+  },
+  "interactions": {
+    "desktopOpen": {
+      "viewport": {
+        "width": 1440,
+        "height": 800,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 1440,
+        "scrollHeight": 800
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 648,
+        "height": 656
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 274.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 728,
+        "width": 1440,
+        "height": 72
+      },
+      "panel": {
+        "x": 1044,
+        "y": 72,
+        "width": 396,
+        "height": 728
+      },
+      "cards": [
+        {
+          "x": 648,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 648,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "true",
+        "layerHidden": false,
+        "mainInert": true,
+        "footerInert": true,
+        "bodyOverflow": "hidden"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf",
+        "http://127.0.0.1:4321/favicon-32x32.png"
+      ]
+    },
+    "escapeClose": {
+      "viewport": {
+        "width": 1440,
+        "height": 800,
+        "devicePixelRatio": 1
+      },
+      "document": {
+        "scrollWidth": 1440,
+        "scrollHeight": 800
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 72
+      },
+      "hero": {
+        "x": 0,
+        "y": 72,
+        "width": 648,
+        "height": 656
+      },
+      "heroContent": {
+        "x": 48,
+        "y": 274.33,
+        "width": 397,
+        "height": 251.33
+      },
+      "footer": {
+        "x": 0,
+        "y": 728,
+        "width": 1440,
+        "height": 72
+      },
+      "panel": null,
+      "cards": [
+        {
+          "x": 648,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 72,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 648,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        },
+        {
+          "x": 1044,
+          "y": 400,
+          "width": 396,
+          "height": 328,
+          "background": "rgb(40, 84, 254)"
+        }
+      ],
+      "state": {
+        "expanded": "false",
+        "layerHidden": true,
+        "mainInert": false,
+        "footerInert": false,
+        "bodyOverflow": "visible"
+      },
+      "colors": {
+        "body": "rgb(40, 84, 254)",
+        "border": "rgb(71, 132, 255)",
+        "secondaryText": "rgb(228, 235, 255)"
+      },
+      "fonts": {
+        "body": "Inter, Arial, sans-serif",
+        "h1Size": "60px",
+        "h1LineHeight": "63.6px"
+      },
+      "resources": [
+        "http://127.0.0.1:4321/_astro/index.DT_4evQm.css",
+        "http://127.0.0.1:4321/_astro/icon-menu.DtsYHXIN.svg",
+        "http://127.0.0.1:4321/_astro/icon-sparkle.C5KZHBSd.svg",
+        "http://127.0.0.1:4321/_astro/icon-plus.Z-MlsdqQ.svg",
+        "http://127.0.0.1:4321/_astro/icon-arrow-right.Czax3TRd.svg",
+        "http://127.0.0.1:4321/_astro/icon-trending-up.I9jhih55.svg",
+        "http://127.0.0.1:4321/_astro/inter-variable.VF2RPR_K.ttf",
+        "http://127.0.0.1:4321/favicon-32x32.png",
+        "http://127.0.0.1:4321/_astro/icon-close.CS0vbVsS.svg"
+      ]
+    }
+  },
+  "consoleFindings": []
+}

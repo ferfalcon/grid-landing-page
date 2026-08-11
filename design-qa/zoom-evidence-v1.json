@@ -1,0 +1,21 @@
+{
+  "effectiveCssViewport": {
+    "width": 720,
+    "height": 500,
+    "devicePixelRatio": 2
+  },
+  "physicalWidthEquivalent": 1440,
+  "document": {
+    "scrollWidth": 705,
+    "scrollHeight": 1815
+  },
+  "horizontalOverflow": false,
+  "heroHeight": 342,
+  "cardWidths": [
+    705,
+    705,
+    705,
+    705
+  ],
+  "h1Size": "44px"
+}

@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "name": "Bridge Collective landing page",
+    "profile": "Lite",
+    "executionMode": "Task-by-task"
+  },
+  "state": {
+    "stage": 11,
+    "status": "Complete",
+    "activeInputs": [
+      "SRC-DS-001",
+      "SRC-REPO-001",
+      "SRC-RUN-001",
+      "SRC-DOC-001",
+      "SRC-DOC-002",
+      "SRC-DOC-003",
+      "SRC-DOC-004",
+      "SRC-ASSET-001",
+      "SRC-ASSET-002"
+    ],
+    "currentTask": null,
+    "latestOutput": "SRC-REPO-003"
+  },
+  "snapshots": [
+    {
+      "id": "SRC-DS-001",
+      "role": "Input baseline",
+      "pinStrength": "Time-bound",
+      "status": "Active",
+      "reference": "https://www.figma.com/design/hYLOXTybaMs6YSpzt4Brdc/grid-landing-page?node-id=6167-47"
+    },
+    {
+      "id": "SRC-REPO-001",
+      "role": "Input baseline",
+      "pinStrength": "Immutable",
+      "status": "Active",
+      "reference": "/home/fer/code/Grid landing page/grid-landing-page",
+      "commit": "da910e51cac0f02b3ea06c4e51e7ae88c80da8ba"
+    },
+    {
+      "id": "SRC-RUN-001",
+      "role": "Supporting source",
+      "pinStrength": "Time-bound",
+      "status": "Active",
+      "reference": "Production starter at https://grid-landing-page-ferfalcon.vercel.app/ inspected 2026-08-11T16:04:39-03:00"
+    },
+    {
+      "id": "SRC-DOC-001",
+      "role": "Supporting source",
+      "pinStrength": "Immutable",
+      "status": "Active",
+      "reference": "README.md sha256 b48e745b32d1c48de7e3804300be981b4ed47ca45004221f06bcdc88d4aa93a0 and AGENTS.md sha256 dac44b8c47a6be5f88ef9a26e7da57311b0d1a07002d4829d3fc8d595c4c6425"
+    },
+    {
+      "id": "SRC-DOC-002",
+      "role": "Supporting source",
+      "pinStrength": "Immutable",
+      "status": "Active",
+      "reference": "docs/design/style-guide.md sha256 35a5725224b6055a327d3c156ebe07cb1e42a361a709e2b3d65bdd0e38672517"
+    },
+    {
+      "id": "SRC-DOC-003",
+      "role": "Supporting source",
+      "pinStrength": "Immutable",
+      "status": "Active",
+      "reference": "docs/initial-code/index.html sha256 cd71efb4a1bcdcdb031171f3bc91612e02629d6b1b645e5e8e69bcc930376db8"
+    },
+    {
+      "id": "SRC-DOC-004",
+      "role": "Supporting source",
+      "pinStrength": "Immutable",
+      "status": "Active",
+      "reference": "Uncommitted docs/implementation-workflow/ChatGPT-instructions.md working-tree content sha256 d62952028d76dc6cd842cc8e08cad93349311b4c37217f61884146833a8383a3"
+    },
+    {
+      "id": "SRC-ASSET-001",
+      "role": "Supporting source",
+      "pinStrength": "Immutable",
+      "status": "Active",
+      "reference": "docs/design/*.jpg reference bundle; per-file SHA-256 and dimensions recorded in SOURCE-BASELINE.md"
+    },
+    {
+      "id": "SRC-ASSET-002",
+      "role": "Supporting source",
+      "pinStrength": "Immutable",
+      "status": "Active",
+      "reference": "docs/initial-code/assets font, OFL, favicon, and SVG bundle; per-file SHA-256 recorded in SOURCE-BASELINE.md"
+    },
+    {
+      "id": "SRC-REPO-002",
+      "role": "Task start",
+      "pinStrength": "Immutable",
+      "status": "Active",
+      "reference": "Documentation-ready implementation branch",
+      "commit": "d707899f39c7261ad0ac3be34f523061924f3e1b",
+      "parent": "SRC-REPO-001",
+      "task": "P01-T01"
+    },
+    {
+      "id": "SRC-REPO-003",
+      "role": "Implementation output",
+      "pinStrength": "Immutable",
+      "status": "Active",
+      "reference": "Implementation output for P01-T01",
+      "commit": "dde476d703b3416214943e2c6968cabcb874947f",
+      "parent": "SRC-REPO-002",
+      "task": "P01-T01"
+    },
+    {
+      "id": "SRC-RUN-002",
+      "role": "Validation runtime",
+      "pinStrength": "Time-bound",
+      "status": "Active",
+      "reference": "Local Astro production preview at http://127.0.0.1:4321 validated 2026-08-11 against dde476d703b3416214943e2c6968cabcb874947f",
+      "parent": "SRC-REPO-003",
+      "task": "P01-T01"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "ART-SOURCE-BASELINE",
+      "type": "SOURCE-BASELINE",
+      "status": "Approved",
+      "baseline": [
+        "SRC-DS-001",
+        "SRC-REPO-001",
+        "SRC-RUN-001",
+        "SRC-DOC-001",
+        "SRC-DOC-002",
+        "SRC-DOC-003",
+        "SRC-DOC-004",
+        "SRC-ASSET-001",
+        "SRC-ASSET-002"
+      ]
+    },
+    {
+      "id": "ART-PROJECT-CONTEXT",
+      "type": "PROJECT-CONTEXT",
+      "status": "Approved",
+      "baseline": [
+        "SRC-DS-001",
+        "SRC-REPO-001",
+        "SRC-RUN-001",
+        "SRC-DOC-001",
+        "SRC-DOC-002",
+        "SRC-DOC-003",
+        "SRC-DOC-004",
+        "SRC-ASSET-001",
+        "SRC-ASSET-002"
+      ]
+    },
+    {
+      "id": "ART-WORKFLOW-STATE",
+      "type": "WORKFLOW-STATE",
+      "status": "Approved",
+      "baseline": [
+        "SRC-DS-001",
+        "SRC-REPO-001",
+        "SRC-RUN-001",
+        "SRC-DOC-001",
+        "SRC-DOC-002",
+        "SRC-DOC-003",
+        "SRC-DOC-004",
+        "SRC-ASSET-001",
+        "SRC-ASSET-002"
+      ]
+    },
+    {
+      "id": "ART-DESIGN-AUDIT",
+      "type": "DESIGN-AUDIT",
+      "status": "Approved",
+      "baseline": [
+        "SRC-DS-001",
+        "SRC-REPO-001",
+        "SRC-RUN-001",
+        "SRC-DOC-001",
+        "SRC-DOC-002",
+        "SRC-DOC-003",
+        "SRC-DOC-004",
+        "SRC-ASSET-001",
+        "SRC-ASSET-002"
+      ]
+    },
+    {
+      "id": "ART-IMPLEMENTATION-BRIEF",
+      "type": "IMPLEMENTATION-BRIEF",
+      "status": "Approved",
+      "baseline": [
+        "SRC-DS-001",
+        "SRC-REPO-001",
+        "SRC-RUN-001",
+        "SRC-DOC-001",
+        "SRC-DOC-002",
+        "SRC-DOC-003",
+        "SRC-DOC-004",
+        "SRC-ASSET-001",
+        "SRC-ASSET-002"
+      ]
+    },
+    {
+      "id": "ART-IMPLEMENTATION-REVIEW",
+      "type": "IMPLEMENTATION-REVIEW",
+      "status": "Approved",
+      "baseline": [
+        "SRC-DS-001",
+        "SRC-REPO-001",
+        "SRC-RUN-001",
+        "SRC-DOC-001",
+        "SRC-DOC-002",
+        "SRC-DOC-003",
+        "SRC-DOC-004",
+        "SRC-ASSET-001",
+        "SRC-ASSET-002",
+        "SRC-REPO-003",
+        "SRC-RUN-002"
+      ]
+    },
+    {
+      "id": "ART-TASK-P01-T01",
+      "type": "TASK",
+      "status": "Approved",
+      "baseline": [
+        "SRC-DS-001",
+        "SRC-REPO-001",
+        "SRC-RUN-001",
+        "SRC-DOC-001",
+        "SRC-DOC-002",
+        "SRC-DOC-003",
+        "SRC-DOC-004",
+        "SRC-ASSET-001",
+        "SRC-ASSET-002"
+      ],
+      "references": [
+        "REQ-FR-001",
+        "REQ-FR-002",
+        "REQ-DR-001",
+        "REQ-NFR-001",
+        "REQ-NFR-002",
+        "REQ-NFR-003",
+        "REQ-CON-001",
+        "REQ-CON-002",
+        "REQ-CON-003",
+        "SPEC-BEH-001",
+        "SPEC-BEH-002",
+        "SPEC-INT-001",
+        "SPEC-ACC-001",
+        "SPEC-VAL-001",
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004",
+        "AC-005",
+        "AC-006",
+        "AC-007"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "P01-T01",
+      "status": "Complete",
+      "baseline": "SRC-REPO-002",
+      "prerequisites": [],
+      "references": [
+        "REQ-FR-001",
+        "REQ-FR-002",
+        "REQ-DR-001",
+        "REQ-NFR-001",
+        "REQ-NFR-002",
+        "REQ-NFR-003",
+        "REQ-CON-001",
+        "REQ-CON-002",
+        "REQ-CON-003",
+        "SPEC-BEH-001",
+        "SPEC-BEH-002",
+        "SPEC-INT-001",
+        "SPEC-ACC-001",
+        "SPEC-VAL-001",
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004",
+        "AC-005",
+        "AC-006",
+        "AC-007"
+      ],
+      "output": "SRC-REPO-003",
+      "validation": [
+        {
+          "name": "Diagnostics",
+          "status": "Passed",
+          "evidence": "pnpm astro check completed with 0 errors, 0 warnings, and 0 hints"
+        },
+        {
+          "name": "Build",
+          "status": "Passed",
+          "evidence": "pnpm build completed successfully for the static Astro route"
+        },
+        {
+          "name": "Responsive visual QA",
+          "status": "Passed",
+          "evidence": "paired source and production-preview comparisons passed at 1440x800, 768x1336, and 375x1816 with breakpoint and 320px metrics"
+        },
+        {
+          "name": "Menu interactions",
+          "status": "Passed",
+          "evidence": "pointer, native keyboard, Escape, scrim, focus restoration, inert, scroll lock, and resize-state checks passed"
+        },
+        {
+          "name": "Accessibility",
+          "status": "Passed",
+          "evidence": "semantic structure, first-tab skip link, 44px toggle, non-focusable labels, contrast, local decorative assets, and reflow checks passed"
+        },
+        {
+          "name": "Source integrity",
+          "status": "Passed",
+          "evidence": "protected SRC-DOC-004 checksum remained d62952028d76dc6cd842cc8e08cad93349311b4c37217f61884146833a8383a3 and was excluded from commits"
+        },
+        {
+          "name": "Deployment",
+          "status": "Not applicable",
+          "reason": "production deployment is explicitly outside P01-T01"
+        }
+      ]
+    }
+  ]
+}

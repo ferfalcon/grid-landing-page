@@ -1,0 +1,84 @@
+---
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  value: string;
+  label: string;
+  description: string;
+  icon: ImageMetadata;
+}
+
+const { value, label, description, icon } = Astro.props;
+---
+
+<li class="stat-card">
+  <div class="stat-card__top">
+    <img src={icon.src} width="32" height="32" alt="" />
+    <p class="stat-card__value">{value}</p>
+  </div>
+  <div class="stat-card__copy">
+    <p class="stat-card__label">{label}</p>
+    <p class="stat-card__description">{description}</p>
+  </div>
+</li>
+
+<style>
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-inline-size: 0;
+    min-block-size: 20.5rem;
+    padding: 1.5rem;
+    border-block-start: 1px solid var(--color-blue-400);
+    background: var(--color-blue-700);
+  }
+
+  .stat-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .stat-card__top img {
+    inline-size: 2rem;
+    block-size: 2rem;
+  }
+
+  .stat-card__value {
+    color: var(--color-neutral-0);
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.11;
+    white-space: nowrap;
+  }
+
+  .stat-card__label {
+    color: var(--color-neutral-0);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 1.65;
+  }
+
+  .stat-card__description {
+    color: var(--color-blue-200);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.42;
+    letter-spacing: -0.015625rem;
+    text-wrap: pretty;
+  }
+
+  @media (min-width: 48rem) {
+    .stat-card {
+      padding: 2rem;
+      border-inline-start: 1px solid var(--color-blue-400);
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .stat-card:hover {
+      background: var(--color-blue-600);
+    }
+  }
+</style>

@@ -1,0 +1,14 @@
+{
+  "keyboardOpen": {
+    "expanded": "true",
+    "hidden": false,
+    "activeToggle": true,
+    "toggleName": "Close menu"
+  },
+  "keyboardEscapeClose": {
+    "expanded": "false",
+    "hidden": true,
+    "activeToggle": true,
+    "toggleName": "Open menu"
+  }
+}

@@ -1,0 +1,203 @@
+---
+import closeIcon from '../assets/icons/icon-close.svg';
+import menuIcon from '../assets/icons/icon-menu.svg';
+
+interface NavItem {
+  label: string;
+}
+
+const navItems: NavItem[] = [
+  { label: 'About' },
+  { label: 'Our Work' },
+  { label: 'Partners' },
+  { label: 'Annual Report' },
+  { label: 'Donate' },
+];
+---
+
+<header class="site-header">
+  <a class="brand" href="/" aria-label="Bridge Collective home">● Bridge Collective</a>
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-controls="site-menu"
+    aria-expanded="false"
+    data-menu-toggle
+  >
+    <img
+      src={menuIcon.src}
+      width="24"
+      height="24"
+      alt=""
+      data-menu-icon
+      data-open-src={menuIcon.src}
+      data-close-src={closeIcon.src}
+    />
+    <span class="visually-hidden" data-menu-label>Open menu</span>
+  </button>
+</header>
+
+<div class="menu-layer" data-menu-layer hidden>
+  <div class="menu-scrim" data-menu-scrim aria-hidden="true"></div>
+  <aside class="menu-panel" id="site-menu" aria-labelledby="site-menu-title">
+    <h2 class="visually-hidden" id="site-menu-title">Site menu</h2>
+    <ul class="menu-list" role="list">
+      {navItems.map((item) => <li>{item.label}</li>)}
+    </ul>
+  </aside>
+</div>
+
+<script>
+  const initializeMenu = () => {
+    const toggle = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+    const layer = document.querySelector<HTMLElement>('[data-menu-layer]');
+    const scrim = document.querySelector<HTMLElement>('[data-menu-scrim]');
+    const icon = document.querySelector<HTMLImageElement>('[data-menu-icon]');
+    const label = document.querySelector<HTMLElement>('[data-menu-label]');
+    const background = Array.from(document.querySelectorAll<HTMLElement>('[data-menu-background]'));
+
+    if (!toggle || !layer || !scrim || !icon || !label || toggle.dataset.initialized) {
+      return;
+    }
+
+    toggle.dataset.initialized = 'true';
+
+    const setOpen = (isOpen: boolean, restoreFocus = false) => {
+      layer.hidden = !isOpen;
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      icon.src = isOpen ? icon.dataset.closeSrc ?? icon.src : icon.dataset.openSrc ?? icon.src;
+      label.textContent = isOpen ? 'Close menu' : 'Open menu';
+      document.body.classList.toggle('menu-open', isOpen);
+
+      background.forEach((element) => {
+        element.inert = isOpen;
+      });
+
+      if (!isOpen && restoreFocus) {
+        toggle.focus({ preventScroll: true });
+      }
+    };
+
+    toggle.addEventListener('click', () => {
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true', true);
+    });
+
+    scrim.addEventListener('click', () => setOpen(false, true));
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        event.preventDefault();
+        setOpen(false, true);
+      }
+    });
+
+    window.addEventListener('pageshow', () => setOpen(false));
+    setOpen(false);
+  };
+
+  initializeMenu();
+  document.addEventListener('astro:page-load', initializeMenu);
+</script>
+
+<style>
+  .site-header {
+    position: relative;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    block-size: var(--header-height);
+    padding: 1.5rem;
+    border-block-end: 1px solid var(--color-blue-400);
+    background: var(--color-blue-700);
+  }
+
+  .brand {
+    color: var(--color-neutral-0);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.42;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .menu-toggle {
+    display: grid;
+    place-items: center;
+    inline-size: 2.75rem;
+    block-size: 2.75rem;
+    margin: -0.625rem;
+    padding: 0.625rem;
+    border: 0;
+    background: transparent;
+    color: var(--color-neutral-0);
+    cursor: pointer;
+  }
+
+  .menu-toggle img {
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+  }
+
+  .menu-layer {
+    position: fixed;
+    inset: var(--header-height) 0 0;
+    z-index: 20;
+  }
+
+  .menu-scrim {
+    position: absolute;
+    inset: 0;
+    background: var(--color-overlay);
+  }
+
+  .menu-panel {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 21.375rem;
+    padding: 2rem;
+    overflow-y: auto;
+    background: var(--color-blue-700);
+  }
+
+  .menu-list {
+    inline-size: 100%;
+    list-style: none;
+    color: var(--color-neutral-0);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: -0.125rem;
+    text-align: center;
+  }
+
+  @media (min-width: 48rem) {
+    .site-header {
+      padding-inline: 3rem;
+    }
+
+    .menu-panel {
+      inset-inline: auto 0;
+      block-size: 100%;
+      inline-size: 24.75rem;
+      min-block-size: 0;
+      padding: 3rem;
+      align-items: flex-start;
+    }
+
+    .menu-list {
+      text-align: end;
+    }
+  }
+
+  @media (pointer: coarse) {
+    .menu-toggle {
+      min-inline-size: 2.75rem;
+      min-block-size: 2.75rem;
+    }
+  }
+</style>
