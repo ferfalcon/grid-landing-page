@@ -1,261 +1,197 @@
-# Implementation Review Template
-
-Use this template to create `IMPLEMENTATION-REVIEW.md`. Validate the completed implementation against exact input snapshots, approved artifacts, the pinned implementation-output repository snapshot, and the runtime used for testing.
-
-Do not report a test, build, lint, type check, accessibility check, source check, or manual review as passed unless it was executed successfully.
-
-Reference only snapshot IDs defined in `SOURCE-BASELINE.md`.
-
-```yaml
 ---
 artifact: IMPLEMENTATION-REVIEW
-status: In progress
+status: Approved
 baseline:
-  design:
-    - SRC-DS-001
-  repository:
-    - SRC-REPO-001
-  runtime: []
-  documentation:
-    - SRC-DOC-001
-  assets: []
+  design: [SRC-DS-001]
+  repository: [SRC-REPO-001, SRC-REPO-002]
+  runtime: [SRC-RUN-001]
+  documentation: [SRC-DOC-001, SRC-DOC-002, SRC-DOC-003, SRC-DOC-004]
+  assets: [SRC-ASSET-001, SRC-ASSET-002]
 implementation:
-  repository_snapshot: SRC-REPO-002
-  runtime_snapshot: SRC-RUN-001
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
+  repository_snapshot: SRC-REPO-003
+  runtime_snapshot: SRC-RUN-002
+created: 2026-08-11
+updated: 2026-08-11
 ---
-```
 
 # Implementation Review
 
 ## 1. Document Information
 
-- Status: In progress
-- Review date: YYYY-MM-DD
-- Reviewer:
-- Project:
+- Status: Approved
+- Review date: 2026-08-11
+- Reviewer: Codex
+- Project: Bridge Collective landing page
 - Source baseline: `SOURCE-BASELINE.md`
-- Original repository input baseline: `SRC-REPO-*`
-- Implementation-output repository snapshot: `SRC-REPO-*`
-- Validation-runtime snapshot: `SRC-RUN-*`
-- Environment:
-
-The implementation-output snapshot must have role Implementation output and contain the reviewed commit SHA. The runtime snapshot must identify that repository snapshot when known.
+- Original repository input: `SRC-REPO-001` at `da910e51cac0f02b3ea06c4e51e7ae88c80da8ba`
+- Task-start repository: `SRC-REPO-002` at `d707899f39c7261ad0ac3be34f523061924f3e1b`
+- Implementation output: `SRC-REPO-003` at `dde476d703b3416214943e2c6968cabcb874947f`
+- Validation runtime: `SRC-RUN-002`, local production preview at `http://127.0.0.1:4321/`
+- Environment: WSL Linux; Node 24.18.0; pnpm 11.9.0; Astro 7.2.0; bundled Chromium 1234.
 
 ## 2. Review Scope
 
-### Included
+Included: the one-route Astro implementation, exact local assets, desktop/tablet/mobile layouts, closed/open menu states, stat hover, semantics, keyboard/focus behavior, responsive/reflow edges, metadata, diagnostics, production build, browser console/resource inspection, and workflow/source lineage.
 
-- Implemented features, pages, components, services, or flows
-- Supported viewports, browsers, and environments
-- Automated and manual validation defined by approved artifacts
+Excluded: deployment, additional routes, menu destinations, analytics, API/backend/persistence, and the Figma menu-link hover state that requires real destinations.
 
-### Excluded
-
-- Deferred or future work
-- Areas not changed by the implementation
-- Checks that could not be executed, with reasons
-
-## 3. Final Baseline and Lineage Integrity Check
+## 3. Final Baseline and Lineage Integrity
 
 | Check | Result | Evidence | Blocking |
 |---|---|---|---|
-| Every referenced `SRC-*` ID exists | Pass / Fail / Blocked | ... | Yes / No |
-| Design input used by approved artifacts is identified | ... | ... | ... |
-| Original repository input baseline is identified | ... | ... | ... |
-| Implementation commit is pinned as an Implementation output `SRC-REPO-*` | ... | ... | ... |
-| Implementation lineage reaches the input baseline without gaps | ... | ... | ... |
-| Runtime used for validation is a `SRC-RUN-*` tied to the implementation output | ... | ... | ... |
-| Unexpected input changes received impact assessment | ... | ... | ... |
-| Expected task outputs are distinguished from upstream changes | ... | ... | ... |
-| No artifact silently relies on newer input content | ... | ... | ... |
-| Superseded artifacts or decisions are visible | ... | ... | ... |
-
-An implementation must not be accepted as matching “the design” without naming the design snapshot.
+| Every referenced `SRC-*` exists | Pass | CLI `validate`, source index | No |
+| Design input is named and pinned | Pass | `SRC-DS-001`, EVD-001–008 | No |
+| Original and task-start repository inputs exist | Pass | `SRC-REPO-001` → `SRC-REPO-002` | No |
+| Implementation commit is immutable output | Pass | `SRC-REPO-003`, full SHA above | No |
+| Output lineage reaches input without gaps | Pass | `SRC-REPO-003` → `SRC-REPO-002` → `SRC-REPO-001` | No |
+| Runtime is tied to output and task | Pass | `SRC-RUN-002`, parent `SRC-REPO-003`, task `P01-T01` | No |
+| Unexpected input changes assessed | Pass | Only protected `SRC-DOC-004`; checksum unchanged | No |
+| Expected outputs separated from upstream edits | Pass | Frontend-only implementation commit; workflow closeout separate | No |
+| No artifact silently uses newer input | Pass | Active inputs and task baseline verified | No |
+| Superseded/accepted decisions visible | Pass | `DEV-001`, `DEV-002` | No |
 
 ## 4. Source, Artifact, and Output Baseline
 
-| Source or artifact | Snapshot, version, or commit | Role | Status | Notes |
+| Item | Snapshot/version | Role | Status | Notes |
 |---|---|---|---|---|
-| Design input | `SRC-DS-*` | Input baseline | Verified / Changed / Unavailable | ... |
-| Repository input | `SRC-REPO-*` | Input baseline | ... | ... |
-| Implementation repository | `SRC-REPO-*` | Implementation output | ... | Contains reviewed commit |
-| Validation runtime | `SRC-RUN-*` | Validation runtime | ... | Associated with implementation output |
-| Product or technical documents | `SRC-DOC-*` | Input / Supporting | ... | ... |
-| `DESIGN-AUDIT.md` | artifact version | ... | ... | ... |
-| `REQUIREMENTS.md` | artifact version | ... | ... | ... |
-| `DESIGN.md` | artifact version | ... | ... | ... |
-| `SPEC.md` | artifact version | ... | ... | ... |
-| `ARCHITECTURE.md`, when applicable | artifact version | ... | ... | ... |
-| `PLAN.md` and `PLAN-REVIEW.md` | artifact versions | ... | ... | ... |
-| Tasks | artifact versions | ... | ... | ... |
+| Figma | `SRC-DS-001` | Input baseline | Verified | Named frames inspected and paired |
+| Initial repository | `SRC-REPO-001` | Input baseline | Verified | Astro starter |
+| Task start | `SRC-REPO-002` | Task start | Verified | Documentation-ready commit |
+| Implementation | `SRC-REPO-003` | Implementation output | Verified | Reviewed production commit |
+| Local preview | `SRC-RUN-002` | Validation runtime | Verified | Production build at output SHA |
+| Documents | `SRC-DOC-001`–`004` | Inputs/supporting | Verified | Protected user edit unchanged |
+| Assets | `SRC-ASSET-001`–`002` | Inputs | Verified | Reference JPGs and exact production bytes |
+| Audit/brief/task | Approved Lite artifacts | Workflow controls | Verified | Complete trace set |
+| Design QA | `design-qa.md` | Rendered comparison | Passed | No P0/P1/P2 findings |
 
-## 5. Validation Environment
+## 5. Validation Environment and Limitations
 
-Document operating system and runtime, browser and device coverage, viewports, test data or accounts, environment variables or service dependencies, accessibility tools, network or performance conditions, and known limitations.
+Production-preview captures used Chromium at device scale 1 for source-matched viewports. Tablet Figma frames were downloaded at their natural 768 × 1336 dimensions; local JPG references supplied desktop/mobile. Paired comparisons have equal crops and density.
+
+Headless Chromium reports no fine pointer. The actual `(hover: hover) and (pointer: fine)` gate was verified in built CSS, and the blue-600 token was visually exercised by a DevTools element override for same-state comparison. This is a non-blocking harness limitation, not a product deviation.
+
+No screen-reader application was available. Native semantics, accessible names/relationships, focus order, keyboard operation, inert behavior, decorative image alternatives, and heading/landmark structure were inspected directly. No live regions, form errors, or dynamic announcements exist.
 
 ## 6. Validation Execution Summary
 
-| Check | Command, tool, or method | Executed | Result | Evidence |
+| Check | Command/tool/method | Executed | Result | Evidence |
 |---|---|---|---|---|
-| Source and lineage verification | ... | Yes / No | Passed / Failed / Blocked | ... |
-| Build | ... | Yes / No | Passed / Failed / Blocked / N/A | ... |
-| Type checking | ... | ... | ... | ... |
-| Linting | ... | ... | ... | ... |
-| Automated tests | ... | ... | ... | ... |
-| Accessibility checks | ... | ... | ... | ... |
-| Responsive review | ... | ... | ... | ... |
-| Visual comparison against `SRC-DS-*` | ... | ... | ... | ... |
-
-Explain every failed, blocked, skipped, or unavailable check.
+| Source/lineage | CLI status/trace/sync/validate plus Git SHA/checksum | Yes | Passed | Generated indexes; `SRC-REPO-003` lineage |
+| Type diagnostics | `pnpm astro check` | Yes | Passed | 0 errors, 0 warnings, 0 hints |
+| Production build | `pnpm build` | Yes | Passed | One static route built |
+| Lint | No linter configured | N/A | Not applicable | `SRC-REPO-001` |
+| Unit/E2E framework | None configured | N/A | Not applicable | Browser controller used for task states |
+| Responsive visual QA | Chromium screenshots + paired images | Yes | Passed | `design-qa/comparison-*-v1.png` |
+| Focused visual QA | Paired hero/cards/menu crops | Yes | Passed | `design-qa/focus-*-v1.png` |
+| Interaction/accessibility | CDP pointer/key/resize/state inspection | Yes | Passed | JSON evidence files |
+| 200% reflow | 720 CSS px at DPR 2 (1440 physical equivalent) | Yes | Passed | `design-qa/zoom-evidence-v1.json` |
+| Browser console/resources | Runtime log and resource entries | Yes | Passed | No findings; no remote resources |
+| Workflow toolkit | `TMPDIR=/tmp npm run validate` | Yes | Passed | Final toolkit validation |
 
 ## 7. Requirement and Specification Coverage
 
-| Source ID | Snapshot or source expectation | Implementation evidence | Validation | Status |
+| IDs | Expectation | Implementation evidence | Validation | Status |
 |---|---|---|---|---|
-| ... | ... | ... | ... | Pass / Fail / Partial / Blocked / N/A |
-
-Every must-have requirement and material specification must appear.
+| REQ-FR-001, AC-001 | Exact content/order/assets | Typed stats, local SVG/font/favicon | Paired visual/content inspection | Pass |
+| REQ-FR-002, SPEC-BEH-001, SPEC-INT-001, AC-003 | Menu state machine | `SiteHeader.astro` native controller | Pointer, Enter, Escape, scrim, resize | Pass |
+| REQ-DR-001, DES-001, AC-002 | Design fidelity | Tokens, measured grids, local Inter | Full/focused paired comparisons | Pass |
+| REQ-NFR-001, DES-RWD-001, AC-002/005 | Responsive/reflow | 48rem/80rem layouts and minimum heights | 320, 375, 767/768, 1024, 1279/1280, 200% effective scale | Pass |
+| REQ-NFR-002, SPEC-ACC-001, AC-005 | Accessibility | Native controls, skip/focus, inert, forced colors | DOM/state/keyboard/contrast inspection | Pass |
+| REQ-NFR-003, AC-006 | Static/local performance | Static HTML/CSS and small controller | Build/resource inspection | Pass |
+| REQ-CON-001, AC-006 | Astro/local assets | One Astro route; no island/runtime framework | Build and network inspection | Pass |
+| REQ-CON-002, AC-003/005 | Visual-only labels | Plain `li`, no targets/cursor/focus | DOM inspection `tabIndex=-1` | Pass |
+| SPEC-BEH-002, DES-INT-002, AC-004 | Fine-pointer stat hover | Guarded blue-600 rule | CSS gate plus visual token comparison | Pass |
+| SPEC-VAL-001, AC-007 | Traceability/source integrity | CLI record and evidence IDs | Workflow/toolkit validation | Pass |
 
 ## 8. Findings
 
-### IMPL-001 — Finding title
+No product P0, P1, P2, P3, or unresolved workflow finding remains.
 
-- **Severity:** Critical / High / Medium / Low
-- **Category:** Source baseline / Output lineage / Requirement / Design fidelity / State / Responsive / Accessibility / Content / Validation / Error handling / Data / API / Compatibility / Performance / Security / Test coverage / Build / Deployment / Regression / Other
-- **Source snapshot, requirement, or specification:**
-- **Expected behavior:**
-- **Actual behavior:**
-- **Implementation and runtime evidence:**
-- **Required correction:**
-- **Status:** Open / Corrected / Accepted deviation / Blocked
-- **Retest evidence:**
-
-Repeat for each finding.
+An early development-server screenshot included Astro's development toolbar. It was discarded as invalid evidence; all accepted comparisons use the production preview. A raw CDP Enter attempt omitted text/native key fields and did not activate the button; `keyboard-evidence-v1.json` records the corrected native key sequence passing. Neither was a production defect.
 
 ## 9. Design Fidelity
 
-Review information architecture, hierarchy, layout, spacing, typography, color, components, variants, assets, interactions, motion, content behavior, and approved deviations against the named `SRC-DS-*` snapshot.
-
-| Area | Design snapshot and reference | Implementation evidence | Result | Notes |
-|---|---|---|---|---|
-| ... | ... | ... | Pass / Fail / Partial | ... |
+| Area | Source/evidence | Result | Notes |
+|---|---|---|---|
+| Layout/hierarchy | `SRC-DS-001`, full pairs | Pass | Reference geometry reproduced |
+| Typography | Hero/card focused pairs | Pass | Local Inter; expected rasterization-only drift |
+| Color/borders/scrim | Computed styles and pairs | Pass | Exact Figma values |
+| Assets/icons | `SRC-ASSET-002`, focused pairs | Pass | Exact supplied bytes |
+| Menu states | Desktop/tablet/mobile open pairs | Pass | Panel/scrim/icon/alignment match |
+| Responsive transitions | Metrics at required widths | Pass | Exact reference widths and resilient edges |
+| Copy/content | `SRC-DOC-003`, pairs | Pass | No invented content |
 
 ## 10. State and Edge-Case Validation
 
-| Element or flow | Default | Hover | Focus | Active | Selected | Disabled | Loading | Empty | Error | Success | Edge cases |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
-
-## 11. Responsive and Content Validation
-
-| Viewport or condition | Expected behavior from pinned source or specification | Actual behavior | Result | Evidence |
-|---|---|---|---|---|
-| Narrow mobile | ... | ... | Pass / Fail / Partial | ... |
-| Intermediate width | ... | ... | ... | ... |
-| Desktop | ... | ... | ... | ... |
-| Unusually wide viewport | ... | ... | ... | ... |
-| Long content | ... | ... | ... | ... |
-| Missing content or asset | ... | ... | ... | ... |
-
-## 12. Accessibility Validation
-
-Review semantic structure, heading hierarchy, keyboard operation, focus order and visibility, accessible names and relationships, announcements, errors, contrast, touch targets, zoom, reflow, reduced motion, and screen-reader behavior.
-
-| Check | Method | Result | Evidence | Finding |
-|---|---|---|---|---|
-| ... | ... | Pass / Fail / Blocked / N/A | ... | ... |
-
-Automated checks do not replace required keyboard, focus, and screen-reader review.
-
-## 13. Data, API, and Error Validation
-
-When applicable, validate data shape and ownership, validation boundaries, loading, retry, empty and partial data, errors, authorization, duplicate actions, failed integrations, persistence, and migrations.
-
-| Scenario | Expected | Actual | Result | Evidence |
-|---|---|---|---|---|
-| ... | ... | ... | ... | ... |
-
-## 14. Non-Functional Validation
-
-| Concern | Requirement | Method | Result | Evidence |
-|---|---|---|---|---|
-| Compatibility | ... | ... | ... | ... |
-| Performance | ... | ... | ... | ... |
-| Security and privacy | ... | ... | ... | ... |
-| Reliability | ... | ... | ... | ... |
-| SEO or metadata | ... | ... | ... | ... |
-| Deployment readiness | ... | ... | ... | ... |
-
-Do not invent thresholds or policies.
-
-## 15. Regression Review
-
-| Existing behavior | Baseline snapshot | Regression risk | Validation performed | Result | Finding |
-|---|---|---|---|---|---|
-| ... | `SRC-REPO-*` / `SRC-RUN-*` | ... | ... | ... | ... |
-
-## 16. Approved Deviations
-
-| Deviation | Source snapshot and expectation | Reason | Approval or evidence | Impact |
-|---|---|---|---|---|
-| ... | ... | ... | ... | ... |
-
-Do not label an unapproved defect as a deviation.
-
-## 17. Corrections and Retesting
-
-| Finding | Correction | Previous implementation snapshot | Corrected implementation snapshot | Retest method | Result |
-|---|---|---|---|---|---|
-| ... | ... | `SRC-REPO-*` | `SRC-REPO-*` | ... | ... |
-
-## 18. Remaining Risks and Limitations
-
-| Risk or limitation | Impact | Mitigation | Blocking |
+| Element/condition | Expected | Actual | Result |
 |---|---|---|---|
-| ... | ... | ... | Yes / No |
+| Menu default/open | ARIA and layer state synchronized | Correct name, expanded, hidden, inert, overflow | Pass |
+| Escape/scrim | Close and return focus | Passed | Pass |
+| Native keyboard | Enter opens; Escape closes | Passed with complete native key sequence | Pass |
+| Resize while open | Panel reflows without losing state | 396px desktop → 375px/342px mobile | Pass |
+| Stat hover | Blue-600 only under fine-pointer media | Guard present; token matches source | Pass |
+| 320px width | No horizontal loss | Scroll width equals content viewport | Pass |
+| 200% effective scale | Reflow without horizontal loss | 720 CSS at DPR 2; mobile stack, no overflow | Pass |
+| Short height | Panel/content can scroll/grow | Minimum heights and panel overflow active | Pass |
 
-## 19. Final Review Checklist
+## 11. Accessibility Validation
 
-### Completeness and correctness
+| Check | Method | Result | Evidence |
+|---|---|---|---|
+| Landmarks/heading/list | Built DOM inspection | Pass | header/main/footer, one H1, stats list |
+| Accessible toggle | DOM/state inspection | Pass | button, controls, expanded, changing name |
+| Keyboard/focus | Native CDP key events | Pass | keyboard/interaction evidence |
+| Skip link/focus visible | First Tab and CSS inspection | Pass | skip link becomes active; forced-colors rule |
+| Background isolation | Open-state inspection | Pass | main/footer inert; scroll locked/restored |
+| Menu labels | DOM inspection | Pass | plain non-focusable list text |
+| Touch target | Bounding rectangle | Pass | 44 × 44px |
+| Contrast | WCAG relative luminance calculation | Pass | 5.54:1 and 4.65:1 |
+| Zoom/reflow | DPR2 effective scale and 320px | Pass | no horizontal overflow |
+| Decorative assets | DOM inspection | Pass | empty alt on decorative images |
 
-- [ ] Final baseline and lineage integrity checks were executed.
-- [ ] Every must-have requirement and material specification was reviewed.
-- [ ] Design fidelity, states, responsive behavior, and content edge cases were checked against named snapshots.
-- [ ] Required accessibility, data, API, compatibility, performance, security, deployment, and regression checks were addressed.
-- [ ] Findings include reproducible evidence and objective corrections.
+## 12. Data, API, Non-Functional, and Regression Review
 
-### Consistency, traceability, source integrity, risks, and uncertainty
+Data/API/loading/empty/error/persistence/migration scenarios are not applicable: content is static and build-time typed. No new public contract, auth boundary, personal data flow, remote service, or secret was introduced.
 
-- [ ] Every finding traces to a pinned source expectation.
-- [ ] The implementation commit is represented by an Implementation output snapshot.
-- [ ] Repository and runtime lineage is complete.
-- [ ] Executed, failed, blocked, skipped, and unavailable checks are distinguished honestly.
-- [ ] Corrected findings were retested against new output snapshots when code changed.
-- [ ] Approved deviations include evidence or approval.
-- [ ] No upstream source changed silently during final review.
-- [ ] Remaining risks and limitations are explicit.
-- [ ] The final result matches unresolved finding severity and lineage integrity.
+Compatibility was checked in current Chromium and through semantic/static output. Performance is supported by static generation, one local variable font, exact SVG assets, and a small inline controller; no project performance threshold exists. Metadata, title, description, favicon, and language are present. Deployment was not changed.
 
-## 20. Final Result
+The Astro starter is intentionally replaced, so starter-screen removal is expected output rather than regression. Unchanged workflow/reference material remains outside the implementation commit.
 
-Select exactly one:
+## 13. Approved Deviations
 
-- `Implementation accepted`
-- `Implementation accepted with documented non-blocking deviations`
-- `Implementation requires corrections`
+| Deviation | Source expectation | Reason/evidence | Impact |
+|---|---|---|---|
+| DEV-001 | Figma menu-link hover variant | No destinations; user approved plain labels | Avoids fake affordance |
+| DEV-002 | Fixed screenshot heights | Minimum heights may grow for content/reflow | Improves accessibility without changing reference frames |
+| QA-LIM-001 | Headless fine-pointer media cannot activate | CSS gate verified; state token visually compared | No production impact |
 
-## 21. Completion Summary
+## 14. Corrections and Retesting
 
-- Files reviewed:
-- Input snapshot IDs validated:
-- Implementation-output repository snapshot:
-- Validation-runtime snapshot:
-- Source and lineage verification executed:
-- Other validation executed:
-- Findings by severity:
-- Corrections completed:
-- Approved deviations:
-- Remaining risks:
-- Recommended next action:
+No implementation correction was required after the normalized paired design comparison. Invalid development-toolbar evidence and the incomplete synthetic Enter event were replaced with production-preview evidence and a complete native key sequence before acceptance.
+
+## 15. Final Checklist
+
+- [x] Final source and lineage checks executed.
+- [x] Every must-have requirement/specification reviewed.
+- [x] Design fidelity, states, responsiveness, content, and accessibility checked.
+- [x] Executed, N/A, and limited checks are distinguished.
+- [x] Implementation output and validation runtime are registered.
+- [x] No source changed silently.
+- [x] Protected `SRC-DOC-004` checksum remains `d62952028d76dc6cd842cc8e08cad93349311b4c37217f61884146833a8383a3`.
+- [x] No unresolved finding remains.
+
+## 16. Final Result
+
+Implementation accepted with documented non-blocking deviations.
+
+## 17. Completion Summary
+
+- Files reviewed: all changed frontend files, production output, workflow artifacts, and QA evidence.
+- Input snapshots: `SRC-DS-001`, `SRC-REPO-001`, `SRC-REPO-002`, `SRC-RUN-001`, `SRC-DOC-001`–`004`, `SRC-ASSET-001`–`002`.
+- Implementation output: `SRC-REPO-003`.
+- Validation runtime: `SRC-RUN-002`.
+- Findings by severity: zero.
+- Corrections: none to production code.
+- Approved deviations: `DEV-001`, `DEV-002`; QA harness limitation documented.
+- Remaining risk: no automated cross-browser or screen-reader suite exists in the repository.
+- Recommended next action: inspect the live local preview; deploy only under separate authorization.

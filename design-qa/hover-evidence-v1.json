@@ -1,0 +1,5 @@
+{
+  "visualTokenBackground": "rgb(50, 92, 255)",
+  "cssRule": "@media (hover: hover) and (pointer: fine)",
+  "method": "Headless Chromium has no fine pointer; the implementation token was visually exercised with an element-level DevTools override, while the media gate was verified from the built CSS."
+}

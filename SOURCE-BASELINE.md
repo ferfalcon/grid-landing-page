@@ -46,7 +46,26 @@ Generated source state is read from `.workflow/generated/SOURCE-INDEX.md`; this 
 - **Build context:** The starter builds successfully. `astro check` requires the absent `@astrojs/check` and `typescript` development packages.
 - **Known limitation:** Repository code and current runtime are starting-state evidence, not target-design authority.
 
+### SRC-REPO-002 — Documentation-ready task start
+
+- **Role:** Immutable Task start for `P01-T01`.
+- **Commit:** `d707899f39c7261ad0ac3be34f523061924f3e1b`.
+- **Parent:** `SRC-REPO-001`.
+- **Scope:** Approved workflow artifacts and generated state on `codex/bridge-collective-landing-page`; production frontend remains the starter.
+- **Protected patch:** `SRC-DOC-004` remains uncommitted and is not part of this snapshot.
+
+### SRC-REPO-003 — Bridge Collective implementation output
+
+- **Role:** Immutable Implementation output for `P01-T01`.
+- **Commit:** `dde476d703b3416214943e2c6968cabcb874947f`.
+- **Parent:** `SRC-REPO-002`.
+- **Produced by:** `P01-T01`.
+- **Scope:** One production Astro route, typed layout/header/stat-card components, exact local assets, responsive states, accessible menu controller, and reproducible browser-capture script.
+- **Validation:** `pnpm astro check` and `pnpm build` pass; paired design QA final result is `passed`.
+- **Protected patch:** `SRC-DOC-004` remains uncommitted and is excluded from this snapshot.
+
 ## 5. Runtime Source Evidence
+
 
 ### SRC-RUN-001 — Current production deployment
 
@@ -57,6 +76,17 @@ Generated source state is read from `.workflow/generated/SOURCE-INDEX.md`; this 
 - **Associated repository:** Matches `SRC-REPO-001` starter content.
 - **Authority:** Current-state/runtime comparison only.
 - **Known limitation:** Deployment is outside implementation scope and will remain unchanged.
+
+### SRC-RUN-002 — Local production-preview validation runtime
+
+- **Role:** Validation runtime for `SRC-REPO-003` and `P01-T01`.
+- **Environment:** Astro production preview at `http://127.0.0.1:4321/`, rendered in bundled Chromium 1234.
+- **Captured at:** 2026-08-11 after commit `dde476d703b3416214943e2c6968cabcb874947f`.
+- **Evidence:** `design-qa/browser-evidence-v1.json`, interaction/keyboard/hover/zoom JSON, seven full-view paired comparisons, and three focused paired comparisons.
+- **Evidence checksums:** browser `08c961e8…`; interactions `3d043336…`; keyboard `62eeadb3…`; hover `45b05312…`.
+- **Result:** No browser console findings or remote resources; exact reference geometry at 1440×800, 768×1336, and 375×1816; final `design-qa.md` result `passed`.
+- **Pin strength:** Time-bound local runtime tied to the immutable implementation output.
+- **Limitation:** This is not the unchanged Vercel production deployment.
 
 ## 6. Documentation Source Evidence
 
@@ -130,6 +160,7 @@ Resolved conflicts: use Figma `#2854fe` for blue-700; keep all five menu labels 
 | Date and time | Snapshots | Method | Classification | Change | Action |
 |---|---|---|---|---|---|
 | 2026-08-11T16:04:39-03:00 | All input snapshots | Figma context, SHA-256, Git commit/remote comparison, HTTP fetch, file inspection | Unchanged baseline | No | Approved for documentation and task creation |
+| 2026-08-11T16:49:00-03:00 | `SRC-REPO-003`, `SRC-RUN-002` | Full SHA, production build, Chromium screenshots/state inspection, paired visual comparison | Expected output | Yes | Implementation accepted; deployment remains excluded. |
 
 ## 10. Baseline Review
 
@@ -146,4 +177,3 @@ Resolved conflicts: use Figma `#2854fe` for blue-700; keep all five menu labels 
 - [x] Target-design sources are distinguished from current-state sources.
 - [x] Conflicts and approved resolutions are explicit.
 - [x] No artifact relies on an undefined source.
-

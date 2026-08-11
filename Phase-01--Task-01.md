@@ -1,10 +1,10 @@
 ---
 artifact: TASK
 id: P01-T01
-status: Not started
+status: Complete
 baseline:
   design: [SRC-DS-001]
-  repository: [SRC-REPO-001]
+  repository: [SRC-REPO-002]
   runtime: [SRC-RUN-001]
   documentation: [SRC-DOC-001, SRC-DOC-002, SRC-DOC-003, SRC-DOC-004]
   assets: [SRC-ASSET-001, SRC-ASSET-002]
@@ -16,7 +16,7 @@ updated: 2026-08-11
 
 ## 1. Status and Objective
 
-`Not started`
+`Complete`
 
 Replace the Astro starter with one committed, production-buildable `/` page that faithfully implements the pinned desktop/tablet/mobile Bridge Collective design, accessible menu behavior, local assets, and recorded visual/interaction validation.
 
@@ -41,7 +41,7 @@ Replace the Astro starter with one committed, production-buildable `/` page that
 - Initial repository commit checked: Yes, `da910e51cac0f02b3ea06c4e51e7ae88c80da8ba`.
 - Difference classification: Unchanged baseline; user-owned `SRC-DOC-004` patch is separately pinned and excluded from task commits.
 - Upstream rebaseline required: No.
-- Task-start snapshot: To be created from the approved documentation-readiness commit before `task start`.
+- Task-start snapshot: `SRC-REPO-002` at `d707899f39c7261ad0ac3be34f523061924f3e1b`; verified and active.
 
 ## 4. Prerequisites
 
@@ -132,14 +132,14 @@ The task begins from an Astro 7 starter with no product component system or fron
 
 ## 11. Acceptance Criteria
 
-- [ ] AC-001 confirmed content and exact assets pass.
-- [ ] AC-002 reference layouts and responsive edges pass.
-- [ ] AC-003 menu state and dismissal behavior pass.
-- [ ] AC-004 fine-pointer stat hover passes.
-- [ ] AC-005 semantic, keyboard, focus, target, contrast, zoom, and reflow checks pass.
-- [ ] AC-006 diagnostics, build, browser, console, and local-asset checks pass.
-- [ ] AC-007 workflow traceability and protected user-patch integrity pass.
-- [ ] Implementation commit has an output snapshot with task-start parent and validation runtime.
+- [x] AC-001 confirmed content and exact assets pass.
+- [x] AC-002 reference layouts and responsive edges pass.
+- [x] AC-003 menu state and dismissal behavior pass.
+- [x] AC-004 fine-pointer stat hover passes.
+- [x] AC-005 semantic, keyboard, focus, target, contrast, zoom, and reflow checks pass.
+- [x] AC-006 diagnostics, build, browser, console, and local-asset checks pass.
+- [x] AC-007 workflow traceability and protected user-patch integrity pass.
+- [x] Implementation commit has an output snapshot with task-start parent and validation runtime.
 
 ## 12. Risks and Deviations
 
@@ -147,24 +147,24 @@ The task begins from an Astro 7 starter with no product component system or fron
 |---|---|---|
 | Font rasterization differs from exported JPG | Minor pixel differences | Compare hierarchy/wrapping and classify antialiasing-only drift as acceptable. |
 | Authoritative TTF is large | Transfer-size limitation | Use one local variable file, no duplicate weights/network request. |
-| Browser tooling could block capture | Design QA cannot pass without rendered evidence | Keep preview alive and use the Codex in-app browser; report blocked rather than claim success if unavailable. |
+| Browser tooling could block capture | Design QA cannot pass without rendered evidence | Production preview captured through bundled Chromium using the DevTools protocol; preserve browser-rendered evidence. |
 | User patch overlaps workflow source docs | Accidental ownership violation | Explicit path staging and checksum recheck. |
 
 Planned deviation: EVD-008 menu-label hover is omitted under the approved visual-only policy. No other deviation is authorized.
 
 ## 13. Output Lineage
 
-- Parent task-start snapshot: Pending `SRC-REPO-002`.
-- Implementation output snapshot: Pending `SRC-REPO-003`.
-- Output commit SHA: Pending.
-- Produced by: P01-T01.
-- Validation status: Pending.
+- Parent task-start snapshot: `SRC-REPO-002`.
+- Implementation output snapshot: `SRC-REPO-003`.
+- Output commit SHA: `dde476d703b3416214943e2c6968cabcb874947f`.
+- Produced by: `P01-T01`.
+- Validation runtime: `SRC-RUN-002`.
+- Validation status: Passed; `IMPLEMENTATION-REVIEW.md` Approved and `design-qa.md` final result `passed`.
 
 ## 14. Definition of Done
 
-- [ ] Objective and AC-001–007 are satisfied.
-- [ ] No required validation is failing or unverified.
-- [ ] Input/task/output/runtime lineage is complete.
-- [ ] Documentation, task, workflow state, and generated views are current.
-- [ ] Deviations/risks are explicit and final design QA says `passed`.
-
+- [x] Objective and AC-001–007 are satisfied.
+- [x] No required validation is failing or unverified.
+- [x] Input/task/output/runtime lineage is complete.
+- [x] Documentation, task, workflow state, and generated views are current.
+- [x] Deviations/risks are explicit and final design QA says `passed`.
